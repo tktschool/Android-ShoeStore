@@ -2,7 +2,7 @@
 
 buildscript {
     ext.kotlin_version = '1.4.21'
-    ext.nav_version = '2.2.0'
+    ext.version_navigation = '2.2.0'
     repositories {
         google()
         jcenter()
@@ -25,6 +25,6 @@ allprojects {
     }
 }
 
-task clean(type: Delete) {˚
+task clean(type: Delete) {
     delete rootProject.buildDir
 }
