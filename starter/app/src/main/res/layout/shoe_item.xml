@@ -29,37 +29,33 @@
 
             <TextView
                 android:id="@+id/name_text"
+                style="@style/normal_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/mitr"
-                android:textSize="@dimen/text_size"
                 android:text="@{shoeItem.name}"
                 tools:text="name" />
 
             <TextView
                 android:id="@+id/company_text"
+                style="@style/normal_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/mitr"
-                android:textSize="@dimen/text_size"
                 android:text="@{shoeItem.company}"
                 tools:text="company" />
 
             <TextView
                 android:id="@+id/size_text"
+                style="@style/normal_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/mitr"
-                android:textSize="@dimen/text_size"
                 android:text="@{String.valueOf(shoeItem.size)}"
                 tools:text="size" />
 
             <TextView
                 android:id="@+id/desc_text"
+                style="@style/normal_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/mitr"
-                android:textSize="@dimen/text_size"
                 android:text="@{shoeItem.description}"
                 tools:text="description" />
 

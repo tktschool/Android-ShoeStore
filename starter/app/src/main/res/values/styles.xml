@@ -16,4 +16,20 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="big_text">
+        <item name="android:fontFamily">@font/mitr</item>
+        <item name="android:textSize">@dimen/big_text_size</item>
+    </style>
+
+    <style name="normal_text">
+        <item name="android:fontFamily">@font/mitr</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="normal_button">
+        <item name="android:fontFamily">@font/mitr</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">#3700BCD4</item>
+    </style>
+
 </resources>

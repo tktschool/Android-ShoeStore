@@ -14,6 +14,7 @@
         tools:context=".InstructionFragment">
 
         <TextView
+            style="@style/big_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -22,6 +23,7 @@
             android:textSize="24sp" />
 
         <TextView
+            style="@style/normal_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -31,6 +33,7 @@
 
         <Button
             android:id="@+id/next_button"
+            style="@style/normal_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
