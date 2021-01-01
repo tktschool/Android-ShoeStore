@@ -1,15 +1,23 @@
 package com.udacity.shoestore
 
+import android.view.View
+import androidx.appcompat.view.menu.ShowableListMenu
+import androidx.databinding.BaseObservable
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.udacity.shoestore.models.Shoe
 
-class ShoeViewModel : ViewModel() {
+class ShoeViewModel : ViewModel()  {
 
     private val _shoeList = MutableLiveData<MutableList<Shoe>>()
     val shoeList: LiveData<MutableList<Shoe>>
         get() = _shoeList
+
+    // Event which triggers the end of the game
+    private val _eventAddShoe = MutableLiveData<Boolean>()
+    val eventAddShoe: LiveData<Boolean>
+        get() = _eventAddShoe
 
     init {
         _shoeList.value = mutableListOf(
@@ -22,8 +30,13 @@ class ShoeViewModel : ViewModel() {
         )
     }
 
-    fun addShoe(name: String?, size: Double?, company: String?, descripton: String?) {
-        _shoeList.value?.add(Shoe(name, size, company, descripton))
+    fun addShoe(v : View,shoe: Shoe) {
+            _shoeList.value?.add(shoe)
+        _eventAddShoe.value = true
+    }
+
+    fun onEventAddShoeComplete() {
+        _eventAddShoe.value = false
     }
 
 }
