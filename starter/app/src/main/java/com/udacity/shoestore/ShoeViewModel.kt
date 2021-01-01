@@ -30,7 +30,7 @@ class ShoeViewModel : ViewModel()  {
         )
     }
 
-    fun addShoe(v : View,shoe: Shoe) {
+    fun addShoe(shoe: Shoe) {
             _shoeList.value?.add(shoe)
         _eventAddShoe.value = true
     }

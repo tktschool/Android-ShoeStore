@@ -130,7 +130,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:text="@string/save"
-            android:onClick="@{(v) -> shoeViewModel.addShoe(v,shoeModel)}"
+            android:onClick="@{() -> shoeViewModel.addShoe(shoeModel)}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/cancel_button"
             app:layout_constraintHorizontal_bias="0.5"

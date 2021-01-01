@@ -20,4 +20,5 @@
     <string name="cancel">Cancel</string>
     <string name="sign_up">sign up</string>
     <string name="email">Email</string>
+    <string name="add_shoe">Add Shoe</string>
 </resources>
